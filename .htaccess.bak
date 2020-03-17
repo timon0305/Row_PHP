@@ -1,0 +1,15 @@
+# ALLOW USER BY IP
+#<Limit GET POST>
+ #order deny,allow
+ #deny from all
+ #allow from 68.145.60.64
+ #allow from 68.145.48.174
+</Limit>
+
+# PREVENT VIEWING OF .HTACCESS
+<Files .htaccess>
+ order allow,deny
+ deny from all
+</Files>
+
+ErrorDocument 403 http://99dn.me/404/ 
